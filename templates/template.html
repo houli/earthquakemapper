@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>(Semi)Live Earthquake Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="60">
+    <link rel="icon" href="{{ url_for('static', filename='ico/favicon.ico') }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='ico/favicon.ico') }}" type="image/x-icon" />
+    <style type="text/css">
+        html { height: 100% }
+        body { height: 100%; margin: 0; padding: 0 }
+        #map-canvas {height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=false">
+    </script>
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
